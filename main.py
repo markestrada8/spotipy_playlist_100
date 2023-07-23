@@ -5,8 +5,8 @@ from spotipy.oauth2 import SpotifyOAuth
 from pprint import pprint
 
 # export as ENV vars
-SPOTIFY_CLIENT_ID = '329742a0121246a8bed47715b4d0af2f'
-SPOTIFY_CLIENT_SECRET = 'c12209d312414360bf3927aa15e7f60b'
+SPOTIFY_CLIENT_ID = ''
+SPOTIFY_CLIENT_SECRET = ''
 
 # Spotify auth manager
 auth_manager = SpotifyOAuth(client_id=SPOTIFY_CLIENT_ID, client_secret=SPOTIFY_CLIENT_SECRET,
@@ -43,7 +43,7 @@ for title in titles:
 
 # playlist_create_result = spotify.user_playlist_create(user=user_id, name=f"{date} Billboard 100", public=False)
 # pprint(playlist_create_result)
-playlist_id = '1oAuTF2RCPxUGJeOFWIUXU'
+playlist_id = ''
 
 tracks_to_add = [f"spotify:track:{id}" for id in song_ids]
 spotify.playlist_add_items(playlist_id=playlist_id, items=tracks_to_add)
